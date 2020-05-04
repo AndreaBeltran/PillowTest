@@ -1,3 +1,3 @@
 # PillowTest
 
-test pillow
+test pillow test
