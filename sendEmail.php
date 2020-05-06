@@ -7,17 +7,17 @@
     $phone = $_POST['phone'];
     $email = $_POST['email'];
     $message = $_POST['message'];
-    if(!empty($_POST['nameP'])){
-        echo "<script> alert('no vacio')</script>";
-    }else{
-        echo "<script> alert('vaciooooo')</script>";
-    }
+    // if(!empty($_POST['nameP'])){
+    //     echo "<script> alert('no vacio')</script>";
+    // }else{
+    //     echo "<script> alert('vaciooooo')</script>";
+    // }
     
     // Datos para el correo
     $to = "lindsandrea@gmail.com";
-    $asunto = $_POST['message'];
+    $asunto = "Pillow Oclock: Informacion";
 
-    $carta = "De: $nameP \n";
+    $carta = "De: $nameP \n $nameM \n";
     $carta .= "Hijos: $son \n";
     $carta .= "Edad: $age \n";
     $carta .= "Telefono: $phone \n";

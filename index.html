@@ -7,6 +7,9 @@
     <title>Pillow Oclock</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/jquery-3.2.1.js"></script>
 </head>
 <body>
     <header>
@@ -16,10 +19,13 @@
       </header>
     <br/>
       <section class="pillow">
-        <p class="sect1"> Gracias por interesarte en mejorar el sueño de tu hijo y el tuyo.</p>
-
+        <pre class="sect1">Gracias por interesarte en mejorar</pre>
+        <pre class="sect1">el sueño de tu hijo</pre>
+        <pre class="sect1">y el tuyo.</pre>
+        <br>
         <p class="sect2"> Actualmente estamos en construcción pero puedes contactarnos directamente a:</p class="sect2">
         <p class="sect1">giu@pillow.oclock.com</p>
+        <br>
         <p class="sect2"> O si deseas, déjanos tus datos para que podamos contactarte y proporcionarte una solución.</p class="sect2">
 
     </section>
@@ -29,13 +35,13 @@
     <div>
         <form action="sendEmail.php" method="post" id="formulario" class="contact-form">
     
-                <input type="text" id="parents" class="form-control my-3" name="nameP"  placeholder="Nombre del padre" required>
-                <input type="text" id="parents" class="form-control my-3" name="nameM"  placeholder="Nombre de la madre" required>
-                <input type="text" id="son" class="form-control my-3" name="son"  placeholder="Nombre del hijo/a"required >
-                <input type="number" id="age" class="form-control my-3" name="age" placeholder="Edad" required>
-                <input type="tel" id="phone" class="form-control my-3" name="phone"  placeholder="Telefono o Celular" required>
-                <input type="email" id="email" class="form-control my-3" name="email"  placeholder="Email" required>
-                <textarea name="message" id="message" class="form-control my-3"  placeholder="¿Qué estás viviendo con el sueño de tus pequeños?" required></textarea>
+                <input type="text" id="parents" class="form-group mx-sm-3 " name="nameP"  placeholder="Nombre del padre" required maxlength="80">
+                <input type="text" id="parents" class="form-group mx-sm-3 " name="nameM"  placeholder="Nombre de la madre" required maxlength="80">
+                <input type="text" id="son" class="form-group mx-sm-3 " name="son"  placeholder="Nombre del hijo/a"required maxlength="60">
+                <input type="number" id="age" class="form-group mx-sm-3 " name="age" placeholder="Edad" required max="50" min="1" >
+                <input type="tel" id="phone" class="form-group mx-sm-3 " name="phone"  placeholder="Telefono o Celular" required pattern="[0-9]{10}">
+                <input type="email" id="email" class="form-group mx-sm-3 " name="email"  placeholder="Email" required maxlength="50">
+                <textarea name="message" id="message" class="form-group mx-sm-3 "  placeholder="¿Qué estás viviendo con el sueño de tus pequeños?" required></textarea>
                
                 <button type="submit" id="send">Enviar</button>
               
@@ -44,9 +50,14 @@
     <footer>
         <p class="sect2">Recuerda seguirnos en nuestras redes sociales</p class="sect2">
         <div class="social">
-            <i class="fab fa-instagram"> </i>  <a href="https://www.instagram.com/pillow.oclock/" style="color:#ffff">  pillow.oclock</a> 
-            <i class="fab fa-facebook-square"> </i> <a href="https://www.facebook.com/pillowoclock-111387400478757/" style="color:#ffff">pillow.oclock</a>
+            <i class="fa fa-instagram"> </i>  <a href="https://www.instagram.com/pillow.oclock/" style="color:#ffff">pillow.oclock</a> 
+            <i class="fa fa-facebook-square"> </i> <a href="https://www.facebook.com/pillowoclock-111387400478757/" style="color:#ffff">pillow.oclock</a>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
 </body>
 </html>
